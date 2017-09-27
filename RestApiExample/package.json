@@ -1,0 +1,21 @@
+{
+  "name": "restapiexample",
+  "version": "1.0.0",
+  "description": "A simple REST API using mongodb and node js by Franco Arraño",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "Tutorial"
+  ],
+  "author": "Franco Arraño",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.5",
+    "mongoose": "^4.11.13"
+  }
+}
