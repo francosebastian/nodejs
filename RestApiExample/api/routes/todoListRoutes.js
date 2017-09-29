@@ -3,8 +3,8 @@ module.exports = function (app) {
     var todoList = require('../controllers/todoListController');
 
     // todoList Routes
-    app.route('profiles')
-        .get(todolist.list_all_profiles)
+    app.route('/profiles')
+        .get(todoList.list_all_profiles)
         .post(todoList.create_a_profile);
 
     app.route('/profiles/:profileId')

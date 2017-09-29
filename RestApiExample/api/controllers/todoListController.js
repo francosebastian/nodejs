@@ -1,7 +1,7 @@
 'use strict'
 
-var moongose = require('moongose'),
-    Profile = moongose.model('Profiles');
+var moongose = require('mongoose'),
+    Profile = moongose.model('Profile');
 
 exports.list_all_profiles = function (req, res) {
     Profile.find({}, function (err, profile) {
@@ -41,7 +41,7 @@ exports.delete_a_profile = function(err, res){
       if(err)
           res.send(err);
       res.json({message:'Perfil eliminado correctamente'})
-    };
+    });
 };
 
 
