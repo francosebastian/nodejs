@@ -13,6 +13,10 @@ mongoose.connect('mongodb://localhost/TestDB');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//Adding a middleware
+app.use(function(req, res) {
+    res.status(404).send({message:'Cannot request URL '+ req.originalUrl + ' not found'})
+});
 
 var routes = require('./api/routes/todoListRoutes'); //importing route
 routes(app); //register the route
