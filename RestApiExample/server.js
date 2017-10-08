@@ -2,7 +2,11 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000,
     mongoose = require('mongoose'),
-    profile = require('./api/models/profile'), //created model loading here
+    Profile = require('./api/models/profile'),
+    Course = require('./api/models/course'),
+    User = require('./api/models/user'), //created model loading here
+//created model loading here
+//created model loading here
     bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
@@ -27,4 +31,4 @@ app.use(function(req, res) {
 app.listen(port);
 
 
-console.log('todo list RESTful API server started on: ' + port);
+console.log('Franco sebastian Restful API Server started at : ' + port);

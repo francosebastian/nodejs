@@ -14,8 +14,9 @@ var UserSchema = new Schema({
     email: {
         type: 'String',
         required: 'Es necesario un Email'
-    },
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
+    }
+}, {
+    timestamps: {createdAt: 'created_at', updatedAt: 'updated_at'}
 });
 
 module.exports = moongose.model('User', UserSchema);

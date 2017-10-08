@@ -37,7 +37,7 @@ exports.update_a_profile = function (req, res) {
 };
 
 exports.delete_a_profile = function(err, res){
-    Profile.rmeove({_id:req.params.profileId},function (err,profile){
+    Profile.remove({_id:req.params.profileId},function (err,profile){
       if(err)
           res.send(err);
       res.json({message:'Perfil eliminado correctamente'})
